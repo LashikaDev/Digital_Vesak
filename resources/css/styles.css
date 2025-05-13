@@ -1,0 +1,545 @@
+@font-face {
+    font-family: 'FMEmanee';
+    src: url('../fonts/FM-Emanee.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FMBindumathi';
+    src: url('../fonts/FM-Bindumathi.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FMAlakamanda';
+    src: url('../fonts/FM-Alakamanda.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.noto-sans-sinhala {
+  font-family: "Noto Sans Sinhala", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+:root {
+    --btn-color-1: #cc8a17;
+    --btn-color-2: #d49322;
+    --btn-color-3: #ad5046;
+    --btn-color-4: #8a3930;
+
+    --text-color-1: #ffffff;
+    --text-color-2: #8A2D3B;
+    --text-color-3: #b9584d;
+    --text-color-4: #641B2E;
+    --text-color-5: #515154;
+    --text-color-6: #353535;
+
+    --bg-color-1: #ffffff;
+    --bg-color-2: #FBDB93;
+    --bg-color-3: #504f4e14;
+    --bg-color-4: #8A2D3B;
+    --bg-color-5: #641B2E;
+    --bg-color-6: #f7e7c4;
+    --bg-color-7: #fffdf8;
+
+    --bd-color-1: #d3d3d3;
+
+    --font-family-Poppins: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color-4);
+    min-height: 100vh;
+    font-family: 'FMBindumathi', sans-serif;
+}
+
+.section_top {
+    display: flex;
+    width: 95%;
+    max-width: 1200px;
+    height: auto;
+    min-height: 100px;
+    margin-top: 15px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color-2);
+    padding: 15px;
+}
+
+.section_top img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section_center {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 1200px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.section_bottom {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 1200px;
+    height: auto;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    background: var(--bg-color-2);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section_left {
+    width: 100%;
+    border-radius: 10px;
+    background: var(--bg-color-2);
+    padding: 10px 18px;
+    margin-bottom: 5px;
+    order: 2;
+}
+
+.section_right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background: var(--bg-color-2);
+    margin-bottom: 15px;
+    order: 1;
+}
+
+.section_card {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 9px;
+    background: var(--bg-color-1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.image_options {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background: var(--bg-color-3);
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.main_title {
+    font-size: 18px;
+    font-family: 'FMBindumathi', sans-serif;
+    color: var(--text-color-3);
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.card_image {
+    width: calc(33.33% - 10px);
+    max-width: 96px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card_image_end {
+    width: calc(33.33% - 10px);
+    max-width: 96px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card_image_preview {
+    width: 45%;
+    height: 200px;
+    background: var(--bg-color-4);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card_sub_topic {
+    margin: 26px 0px 0px;
+    width: 75%;
+    height: auto;
+}
+
+.wish_text_area {
+    width: 90%;
+    height: auto;
+    padding: 2px;
+}
+
+.card_main_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+.sub_title {
+    font-size: 16px;
+    font-family: 'FMBindumathi', sans-serif;
+    color: var(--text-color-3);
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+
+.card_title {
+    font-size: 18px;
+    font-family: 'FMBindumathi', sans-serif;
+    color: var(--text-color-3);
+    font-weight: bold;
+    margin: 0px 0px 18px;
+    text-align: center;
+}
+
+.stamps_collection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.stamps_collection_one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.stamp_image {
+    max-width: 73.8px;
+    height: auto;
+    cursor: pointer;
+    border: 1.5px solid var(--bg-color-4);
+    margin-bottom: 10px;
+}
+
+.stamp_image_last {
+    max-width: 72.5px;
+    height: auto;
+    cursor: pointer;
+    border: 1.5px solid var(--bg-color-4);
+    margin-bottom: 10px;
+}
+
+.card_main_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 55%;
+    padding: 15px;
+    position: relative;
+    text-align: center;
+    background-color: var(--bg-color-7);
+    background-image: url(../images/border.png);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.card_stamp_image {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+.combo_box {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'FMBindumathi', sans-serif;
+    border: 2px solid var(--bg-color-4);
+    border-radius: 8px;
+    background-color: var(--bg-color-6);
+    cursor: pointer;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+.combo_box option {
+    font-family: 'FMBindumathi', sans-serif;
+}
+
+.text_input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid var(--bg-color-4);
+    background-color: var(--bg-color-6);
+    border-radius: 8px;
+    font-family: 'FMBindumathi', sans-serif;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+.download_button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--bg-color-1);
+    background-color: var(--bg-color-5);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'FMBindumathi', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.download_button:hover {
+    background-color: var(--bg-color-4);
+}
+
+.button_group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.icon-margin {
+    margin-right: 8px;
+}
+
+.reset_button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--bg-color-1);
+    background-color: var(--btn-color-2);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'FMBindumathi', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.reset_button:hover {
+    background-color: var(--btn-color-1);
+}
+
+.share_button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--bg-color-1);
+    background-color: var(--btn-color-3);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'FMBindumathi', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.share_button:hover {
+    background-color: var(--btn-color-4);
+}
+
+.credit-title {
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color-3);
+    font-weight: 500;
+    margin: 5px 0;
+    line-height: 0.7;
+}
+
+.wish_text_area p {
+    line-height: 0.4;
+    font-size: 10px;
+    color: var(--text-color-5);
+    font-family: 'FMAlakamanda', sans-serif;
+}
+
+.sender_name {
+    font-size: 9px;
+    font-family: 'FMBindumathi', sans-serif;
+    color: var(--text-color-6);
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.receiver_name {
+    font-size: 9px;
+    font-family: 'FMBindumathi', sans-serif;
+    color: var(--text-color-6);
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+@media (min-width: 768px) {
+    .section_center {
+        flex-direction: row;
+    }
+
+    .section_left {
+        width: 30%;
+        margin-bottom: 0;
+        margin-right: 15px;
+        order: 1;
+    }
+
+    .section_right {
+        width: calc(70% - 15px);
+        margin-bottom: 0px;
+        order: 2;  
+    }
+
+    .section_card {
+        flex-direction: row;
+        border-radius: 10px;
+    }
+
+    .card_image_preview {
+        width: 45%;
+        height: 355px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .card_main_details {
+        width: 55%;
+    }
+
+    .stamps_collection_one {
+        justify-content: flex-start;
+    }
+
+    .stamp_image {
+        width: 80px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .button_group {
+        flex-direction: row;
+    }
+
+    .reset_button,
+    .share_button {
+        width: 50%;
+        margin: 10px 10px 10px 0;
+    }
+
+    .share_button {
+        margin: 10px 0 10px 10px;
+    }
+
+    .card_image {
+        width: 96px;
+        margin-right: 10px;
+    }
+
+    .card_image_end {
+        width: 96px;
+    }
+
+    .card_stamp_image {
+        width: 60px;
+        height: auto;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+    }
+
+    .card_sub_topic {
+        margin: 39px 0px 0px;
+        width: 75%;
+        max-width: 220px;
+        height: auto;
+    }
+
+    .wish_text_area p {
+        line-height: 1.5;
+        font-size: 16px;
+        color: var(--text-color-5);
+        font-family: 'FMAlakamanda', sans-serif;
+        margin: 5px 0;
+    }
+
+    .wish_text_area {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+        padding: 5px;
+    }
+
+    .sender_name {
+        font-size: 14px;
+        font-family: 'FMBindumathi', sans-serif;
+        color: var(--text-color-6);
+        font-weight: bold;
+        margin: 5px 0;
+    }
+
+    .receiver_name {
+        font-size: 14px;
+        font-family: 'FMBindumathi', sans-serif;
+        color: var(--text-color-6);
+        font-weight: bold;
+        margin: 5px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section_top {
+        height: 160px;
+    }
+
+    .section_center {
+        height: 650px;
+    }
+
+    .section_bottom {
+        height: 80px;
+        flex-direction: column;
+    }
+
+    .credit-title {
+        line-height: 1.5;
+        margin: 0;
+    }
+}
